@@ -47,6 +47,10 @@ body {
  height: 35px;
 }
 
+.logo:hover {
+ animation: moveInRight 2s ease-out;
+}
+
 .text-box {
  position: fixed;
  top: 40%;
@@ -57,6 +61,9 @@ body {
 .heading-primary {
  color: #ffff;
  text-transform: uppercase;
+
+ /* This fixes the 'Shaking' screen in animation */
+ backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -64,11 +71,58 @@ body {
  font-size: 60px;
  font-weight: 400;
  letter-spacing: 35px;
+
+ /* Minimum required props for animation to work: name & duration */
+ animation-name: moveInLeft;
+ animation-duration: 2s;
+ animation-timing-function: ease-out;
+
+ /* 
+   animation-delay: 2s;
+   animation-iteration-count: 3;
+  */
 }
 
 .heading-primary-sub {
  display: block;
  font-size: 20px;
  font-weight: 700;
- letter-spacing: 16.6px;
+ letter-spacing: 17.3px;
+ animation: moveInRight 2s ease-out;
+}
+
+@keyframes moveInLeft {
+ 0% {
+  opacity: 0;
+  /* the X - (axis) direction is left to right */
+  /* the Y - (axis) direction is top to bottom */
+  transform: translateX(-100px);
+ }
+
+ 80% {
+  transform: translateX(50px);
+ }
+
+ 100% {
+  opacity: 1;
+  transform: translateX(0);
+ }
+}
+
+@keyframes moveInRight {
+ 0% {
+  opacity: 0;
+  /* the X - (axis) direction is left to right */
+  /* the Y - (axis) direction is top to bottom */
+  transform: translateX(100px);
+ }
+
+ 80% {
+  transform: translateX(-15px);
+ }
+
+ 100% {
+  opacity: 1;
+  transform: translateX(0);
+ }
 }
