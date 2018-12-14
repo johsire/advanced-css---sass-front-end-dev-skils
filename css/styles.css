@@ -47,15 +47,12 @@ body {
  height: 35px;
 }
 
-.logo:hover {
- animation: moveInRight 2s ease-out;
-}
-
 .text-box {
  position: fixed;
  top: 40%;
  left: 50%;
  transform: translate(-50%, -50%);
+ text-align: center;
 }
 
 .heading-primary {
@@ -64,6 +61,7 @@ body {
 
  /* This fixes the 'Shaking' screen in animation */
  backface-visibility: hidden;
+ margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -125,4 +123,30 @@ body {
   opacity: 1;
   transform: translateX(0);
  }
+}
+
+/* link - Psudo-Class (special state of a selector) */
+.btn:link,
+.btn:visited {
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 15px 40px;
+ display: inline-block;
+ border-radius: 100px;
+ transition: all .2s;
+}
+
+.btn:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 10px rgb(0,0,0,.2);
+}
+
+.btn:active {
+ transform: translate(-1px);
+ box-shadow: 0 5px 10px rgb(0,0,0,.2);
+}
+
+.btn-white {
+ background-color: #fff;
+ color: #777;
 }
