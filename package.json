@@ -1,0 +1,22 @@
+{
+  "name": "advanced-css-sass-for-front-end-devs",
+  "version": "1.0.0",
+  "description": "Landing Page for Natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johsire/advanced-css-sass-for-front-end-devs.git"
+  },
+  "author": "Joh Maina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johsire/advanced-css-sass-for-front-end-devs/issues"
+  },
+  "homepage": "https://github.com/johsire/advanced-css-sass-for-front-end-devs#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
