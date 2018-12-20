@@ -27,15 +27,15 @@ body {
   /* defined from top-right corner moving clock-wise */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem; }
 
-.logo {
+.header__logo {
   height: 3.5rem; }
 
-.text-box {
+.header__text-box {
   position: fixed;
   top: 40%;
   left: 50%;
@@ -119,10 +119,10 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .btn:active {
-  transform: translate(-1px);
+  transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777; }
 
@@ -138,13 +138,13 @@ body {
   z-index: -1;
   transition: all .4s; }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff; }
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom .5s ease-out 1.6s;
   animation-fill-mode: backwards; }
