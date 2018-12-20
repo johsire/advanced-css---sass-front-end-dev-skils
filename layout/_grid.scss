@@ -1,0 +1,12 @@
+
+.row {
+ max-width: $grid-width;
+ background-color: #eee;
+ margin: 0 auto;
+
+ // This Pseudo Class can also be written as- .row:not();
+ // This means- select everything BUT the :last-child
+ &:not(:last-child){
+  margin-bottom: $gutter-vertical;
+ }
+}

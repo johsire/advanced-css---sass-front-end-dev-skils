@@ -12,8 +12,8 @@ Build beautiful & visually appealing web-apps using advanced html css & sass.
 
  - Responsive Design(Web)
    - @media-Queries
-   - Fluid Layouts
-   - Responsive Images
+   - Fluid Grids & Layouts
+   - Flexible/Responsive Images
    - Correct Units
    - Desktop-First vs Mobile-First Design Strategy
 

@@ -1,15 +1,20 @@
-// Other Files Imports------>>>>
+// Abstract Imports------>>>>
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+// Base Imports -------->>>>>
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
 @import "base/utilities";
 
+// Components Imports ------->>>>>>>
 @import "components/button";
 
-@import "pages/home";
-
+// Layout Imports ------------>>>>>>>
+@import "layout/grid";
 @import "layout/header";
+
+// Pages Imports ----------->>>>>>>>>
+@import "pages/home";
