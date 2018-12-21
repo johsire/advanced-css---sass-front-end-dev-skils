@@ -1,7 +1,6 @@
 
 .row {
  max-width: $grid-width;
- background-color: #eee;
  margin: 0 auto;
 
  // This Pseudo Class can also be written as- .row:not();
@@ -16,7 +15,6 @@
  // Select ANY 'CLASS ...(*)   / Wild-Card
  // Select OLNY 'class' that START with ...(^)
  [class^="col-"] {
-  background-color: orangered;
   float: left;
 
   &:not(:last-child) {
