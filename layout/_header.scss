@@ -9,6 +9,7 @@
  background-size: cover;
  background-position: top;
  position: relative;
+ -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
  /* defined from top-right corner moving clock-wise */
  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -24,7 +25,7 @@
  }
  
  &__text-box {
-  position: fixed;
+  position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
