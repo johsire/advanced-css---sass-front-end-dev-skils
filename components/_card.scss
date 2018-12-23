@@ -144,4 +144,33 @@
       }
     }
   }
+
+  // FRONT SIDE STYLES ----->>>>>
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+ }
+
+ &__price-box {
+   text-align: center;
+   margin-bottom: 8rem;
+   color: $color-white;
+ }
+
+ &__price-only {
+   font-size: 1.4rem;
+   text-transform: uppercase;
+ }
+
+ &__price-value {
+   font-size: 6rem;
+   font-weight: 100;
+ }
+
 }
