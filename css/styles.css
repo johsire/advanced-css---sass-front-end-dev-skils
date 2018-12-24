@@ -399,6 +399,15 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .1; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -512,5 +521,5 @@ body {
   margin-top: -15vh; }
 
 .section-stories {
-  padding: 15rem 0;
-  background-color: #f7f7f7; }
+  position: relative;
+  padding: 15rem 0; }
