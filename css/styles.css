@@ -274,7 +274,19 @@ body {
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
   .story__img {
-    height: 100%; }
+    height: 100%;
+    -webkit-transform: translateX(-4rem) scale(1.4);
+    -moz-transform: translateX(-4rem) scale(1.4);
+    -ms-transform: translateX(-4rem) scale(1.4);
+    -o-transform: translateX(-4rem) scale(1.4);
+    transform: translateX(-4rem) scale(1.4);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
   .story__text {
     -webkit-transform: skewX(12deg);
     -moz-transform: skewX(12deg);
@@ -309,6 +321,14 @@ body {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    -webkit-transform: translateX(-4rem) scale(1);
+    -moz-transform: translateX(-4rem) scale(1);
+    -ms-transform: translateX(-4rem) scale(1);
+    -o-transform: translateX(-4rem) scale(1);
+    transform: translateX(-4rem) scale(1);
+    -webkit-filter: blur(5px) brightness(75%);
+    filter: blur(5px) brightness(75%); }
 
 /* link - Psudo-Class (special state of a selector) */
 .btn:link, .btn:visited {
