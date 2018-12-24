@@ -1,35 +1,53 @@
 
 .section-about {
- background-color: $color-grey-light-1;
- padding: 25rem 0;
- margin-top: -20vh;
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
 }
 
 .section-features {
- padding: 20rem 0;
- background-image: linear-gradient(
-   to right bottom,
-   rgba($color-primary-light, .8),
-   rgba($color-primary-dark, .8)),
- url(../img/nat-4.jpg);
- background-size: cover;
- transform: skewY(-7deg);
- margin-top: -5rem;
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom,
+    rgba($color-primary-light, .8),
+    rgba($color-primary-dark, .8)),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -5rem;
 
- // Direct Child Selector:">" - only selects the 1st child it comes across;
- // Same as: .section-features > * {}
- & > * {
-  transform: skewY(7deg);
- }
+  // Direct Child Selector:">" - only selects the 1st child it comes across;
+  // Same as: .section-features > * {}
+  &>* {
+    transform: skewY(7deg);
+  }
 }
 
 .section-tours {
- background-color: $color-grey-light-1;
- padding: 25rem 0 10rem 0;
- margin-top: -15vh;
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 10rem 0;
+  margin-top: -15vh;
 }
 
 .section-stories {
   position: relative;
   padding: 15rem 0;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.book {
+  background-image: url(../img/nat-10.jpg);
+  background-size: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+  height: 50rem;
+
 }
