@@ -35,11 +35,19 @@
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-}
+  background-image: linear-gradient(
+    to right bottom, 
+    $color-primary-light, 
+    $color-primary-dark);
+  }
 
 .book {
-  background-image: url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg,
+                                    rgba($color-white, .9) 0%,
+                                    rgba($color-white, .9) 50%,
+                                    transparent 50%,
+                                    ),
+                    url(../img/nat-10.jpg);
   background-size: 100%;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -51,3 +59,4 @@
   height: 50rem;
 
 }
+
