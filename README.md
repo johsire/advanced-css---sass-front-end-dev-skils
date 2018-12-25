@@ -1,14 +1,14 @@
-#Advanced HTML-CSS & SASS!
+#Advanced CSS-SASS & HTML!
 
 For Front End Devs, UI/UX Designers!
 
-Build beautiful & visually appealing web-apps using advanced html css & sass. 
- - Advanced HTML,CSS/SASS
+Build beautiful & visually appealing web-apps using advanced css & sass.
+ - Advanced CSS/SASS and HTML
 
  - Animation
    - @key-Frames
-   - Psedo-Classes
-   - Psedo-Elements
+   - Pseudo-Classes
+   - Pseudo-Elements
 
  - Responsive Design(Web)
    - @media-Queries
@@ -18,14 +18,14 @@ Build beautiful & visually appealing web-apps using advanced html css & sass.
    - Desktop-First vs Mobile-First Design Strategy
 
 - Write Maintainable and Scalable Code.
-   - Clean 
+   - Clean
    - Easy-to-understand/ Read
    - Growth (Easy to add to in the future)
    - Re-usable (By yourself & other devs)
    - How to organize files/ Directory
    - How to name Classes
-   - How to Stracture HTML (html mark-up)
-   
+   - How to Structure HTML (html mark-up)
+
 - Improve Web Performance
    - Write Less Code
    - Use Less Images
