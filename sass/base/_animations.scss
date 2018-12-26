@@ -1,52 +1,52 @@
-
 @keyframes moveInLeft {
- 0% {
-  opacity: 0;
-  /* the X - (axis) direction is left to right */
-  /* the Y - (axis) direction is top to bottom */
-  transform: translateX(-10rem);
- }
+  0% {
+    opacity: 0;
+    /* the X - (axis) direction is left to right */
+    /* the Y - (axis) direction is top to bottom */
+    transform: translateX(-10rem);
+  }
 
- 80% {
-  transform: translateX(5rem);
- }
+  80% {
+    transform: translateX(5rem);
+  }
 
- 100% {
-  opacity: 1;
-  transform: translateX(0);
- }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes moveInRight {
- 0% {
-  opacity: 0;
-  /* the X - (axis) direction is left to right */
-  /* the Y - (axis) direction is top to bottom */
-  transform: translateX(10rem);
- }
+  0% {
+    opacity: 0;
+    /* the X - (axis) direction is left to right */
+    /* the Y - (axis) direction is top to bottom */
+    transform: translateX(10rem);
+  }
 
- 80% {
-  transform: translateX(-1.5rem);
- }
+  80% {
+    transform: translateX(-1.5rem);
+  }
 
- 100% {
-  opacity: 1;
-  transform: translateX(0);
- }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes moveInBottom {
   0% {
-   opacity: 0;
-   transform: translateY(3rem);
+    opacity: 0;
+    transform: translateY(3rem);
   }
- 
+
   100% {
-   opacity: 1;
-   transform: translate(0);
-   -webkit-transform: translate(0);
-   -moz-transform: translate(0);
-   -ms-transform: translate(0);
-   -o-transform: translate(0);
+    opacity: 1;
+    
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
 }
- }

@@ -23,7 +23,7 @@
     display: table;
     overflow: hidden;
     background-color: $color-white;
-    box-shadow: 0 2rem 4rem rgba($color-black, .9,);
+    box-shadow: 0 2rem 4rem rgba($color-black, .9, );
 
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -42,7 +42,7 @@
     -ms-transform: translate(-50%, -50%) scale(.25);
     -o-transform: translate(-50%, -50%) scale(.25);
     transform: translate(-50%, -50%) scale(.25);
-}
+  }
 
   &__left {
     width: 33.333333%;
@@ -79,7 +79,7 @@
     hyphens: auto;
   }
 
-  //----- Pop-Up Open States Styles ------- -->>>>>>>>>>>>>>>>>>>>>>>>------
+  //----- Pop-Up Open States Styles --------->>>>------
   &:target {
     opacity: 1;
     visibility: visible;
@@ -93,9 +93,10 @@
     -ms-transform: translate(-50%, -50%) scale(1);
     -o-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1);
-}
+  }
 
   &__close {
+
     &:link,
     &:visited {
       color: $color-grey-dark-1;
@@ -110,7 +111,7 @@
       -ms-transition: all .1s;
       -o-transition: all .1s;
       transition: all .1s;
-}
+    }
 
     &:hover {
       color: orangered;

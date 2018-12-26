@@ -2,8 +2,8 @@
 
 For Front End Devs, UI/UX Designers!
 
-Build beautiful & visually appealing web-apps using advanced css & sass.
- - Advanced CSS/SASS and HTML
+Build beautiful & visually appealing web-apps using advanced css-sass.
+ - Advanced CSS-SASS and HTML
 
  - Animation
    - @key-Frames

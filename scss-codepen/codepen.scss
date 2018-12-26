@@ -1,12 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-$color-primary: #f9ed69;     //yellow color
-$color-secondary: #f08a5d;  // orange
-$color-tertiary: #b83b5e;  // pink
-$color-text-dark: #333;   // dark
+$color-primary: #f9ed69; //yellow color
+$color-secondary: #f08a5d; // orange
+$color-tertiary: #b83b5e; // pink
+$color-text-dark: #333; // dark
 $color-text-light: #eee; // bright
 
 $width-button: 150px;
@@ -34,24 +34,24 @@ $width-button: 150px;
 nav {
   margin: divide(60, 2) * 1px; // 30px(result frm divide fn)
   background-color: $color-primary;
-  
+
   @include clearfix;
 }
 
 .navigation {
   list-style: none;
   float: left;
-  
+
   // nested navigation selector
   li {
     display: inline-block;
     margin-left: 30px;
-    
-    // sudo-classes need andpercent aparator (&) to work as intended;
+
+    // pseudo-classes need and-percent operator (&) to work as intended;
     &:first-child {
       margin: 0;
     }
-    
+
     a:link {
       @include style-link-text($color-text-dark);
     }
@@ -76,7 +76,7 @@ nav {
     @extend %btn-placeholder;
     background-color: $color-secondary;
   }
-  
+
   &:hover {
     // function darken with arguments(color & %ge) passed in it    
     background-color: darken($color-secondary, 15%);
@@ -88,7 +88,7 @@ nav {
     @extend %btn-placeholder;
     background-color: $color-tertiary;
   }
-  
+
   &:hover {
     // function lighten with arguments(color & %ge) passed in it    
     background-color: lighten($color-tertiary, 10%);

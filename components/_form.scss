@@ -5,20 +5,22 @@
  }
 
  &__input {
-  font-size: 1.5rem;
-  font-family: inherit;
+  width: 90%;
+  border: none;
+  display: block;
   color: inherit;
+  font-size: 1.5rem;
   padding: 1.5rem 2rem;
+  font-family: inherit;
+  border-bottom: 3px solid transparent;
+  background-color: rgba($color-white, .5);
+
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  background-color: rgba($color-white, .5);
-  border: none;
-  border-bottom: 3px solid transparent;
-  width: 90%;
-  display: block;
+
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
@@ -27,8 +29,8 @@
 
   &:focus {
    outline: none;
-   box-shadow: 0 1rem 2rem rgba($color-black, .1);
    border-bottom: 3px solid $color-primary;
+   box-shadow: 0 1rem 2rem rgba($color-black, .1);
   }
 
   &:focus:invalid {
@@ -41,11 +43,12 @@
  }
 
  &__label {
+  display: block;
   font-size: 1.2rem;
   font-weight: 700;
   margin-left: 2rem;
   margin-top: .7rem;
-  display: block;
+  
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
@@ -56,6 +59,7 @@
  &__input:placeholder-shown+&__label {
   opacity: 0;
   visibility: hidden;
+
   -webkit-transform: translateY(-4rem);
   -moz-transform: translateY(-4rem);
   -ms-transform: translateY(-4rem);
@@ -73,46 +77,50 @@
  }
 
  &__radio-label {
-  font-size: $default-font-size;
   cursor: pointer;
   position: relative;
   padding-left: 4.5rem;
+  font-size: $default-font-size;
  }
 
  &__radio-button {
-  height: 3rem;
+  left: 0;
+  top: -.4rem;
   width: 3rem;
+  height: 3rem;
+  position: absolute;
+  display: inline-block;
   border: 5px solid $color-primary;
+
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: -.4rem;
 
   &::after {
    content: "";
-   display: block;
-   height: 1.3rem;
+   top: 50%;
+   left: 50%;
+   opacity: 0;
    width: 1.3rem;
+   height: 1.3rem;
+   display: block;
+   position: absolute;
+
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
    border-radius: 50%;
-   position: absolute;
-   top: 50%;
-   left: 50%;
+ 
    background-color: $color-primary;
    -webkit-transform: translate(-50%, -50%);
    -moz-transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
    -o-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);
-   opacity: 0;
+
    -webkit-transition: opacity .2s;
    -moz-transition: opacity .2s;
    -ms-transition: opacity .2s;
@@ -124,5 +132,4 @@
  &__radio-input:checked~&__radio-label &__radio-button::after {
   opacity: 1;
  }
-
 }
